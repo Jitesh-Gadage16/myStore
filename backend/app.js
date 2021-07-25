@@ -19,4 +19,8 @@ app.use(express.json());
 const userRegistrationRoute = require('./routers/userRegistrationRouter');
 app.use(userRegistrationRoute);
 
+//getCatHeadList
+const getCatHeaderListRouter = require('./routers/getCatHeaderListRouter');
+app.use(getCatHeaderListRouter);
+
 app.listen(Port, () => console.log('running good.'));

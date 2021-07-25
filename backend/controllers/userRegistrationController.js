@@ -8,7 +8,7 @@ const userRegistration = async(req, res) => {
         const mobile = req.body.mobile;
         const password = await bcrypt.hash(req.body.password, 8);
 
-        userData = await new UserData({
+        const userData = await new UserData({
             firstname,
             lastname,
             mobile,
